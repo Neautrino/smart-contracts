@@ -27,11 +27,11 @@ The **EventOrganiser** smart contract allows users to create events, sell ticket
 - **Ticket Transfer**: Users can transfer tickets to others before the event date.
 - **Fund Withdrawal**: Only the event organizer can withdraw funds collected from ticket sales.
 
+---
+
 ### Solidity Version
 
 The contract is compatible with Solidity version `^0.8.24`.
-
----
 
 ## Installation & Usage
 
