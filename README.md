@@ -1,6 +1,6 @@
 # Smart Contracts Collection
 
-This project contains two Solidity-based smart contracts: **PocketMoney** and **EventOrganiser**. Each contract has a specific purpose and includes admin control and secure fund management features.
+This project contains three Solidity-based smart contracts: **PocketMoney**, **EventOrganiser**, and **CrowdFunding**. Each contract has a specific purpose and includes admin control and secure fund management features.
 
 ## 1. PocketMoney Smart Contract
 
@@ -27,11 +27,24 @@ The **EventOrganiser** smart contract allows users to create events, sell ticket
 - **Ticket Transfer**: Users can transfer tickets to others before the event date.
 - **Fund Withdrawal**: Only the event organizer can withdraw funds collected from ticket sales.
 
+## 3. CrowdFunding Smart Contract
+
+### Description
+
+The **CrowdFunding** smart contract allows users to contribute funds towards a specific target within a deadline. The funds are used to finance requests for specific purposes, with contributors having the power to vote on fund allocation.
+
+### Key Features
+
+- **Contributions**: Users can contribute funds towards a project. If the target is not met by the deadline, they can request a refund.
+- **Requests for Funds**: The admin (contract deployer) can create requests to allocate the collected funds for specific purposes.
+- **Voting System**: Contributors can vote on requests. Only requests that receive majority approval can be funded.
+- **Secure Fund Release**: Funds are released only when a request receives more than 50% approval from contributors.
+
 ---
 
 ### Solidity Version
 
-The contract is compatible with Solidity version `^0.8.24`.
+The contracts are compatible with Solidity version `^0.8.24`.
 
 ## Installation & Usage
 
@@ -44,6 +57,11 @@ The contract is compatible with Solidity version `^0.8.24`.
    - Any user can create an event.
    - Users can buy tickets for events and transfer tickets to others.
    - Event organizers can withdraw funds from ticket sales.
+5. For the **CrowdFunding** contract:
+   - Users can contribute funds towards a target within a deadline.
+   - Admin can create requests to allocate funds.
+   - Contributors vote to approve fund allocations.
+   - If the target is not met, contributors can request refunds.
 
 ## License
 
